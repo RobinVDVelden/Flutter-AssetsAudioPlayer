@@ -123,8 +123,8 @@ class Player(
                     }
                     updateNotifPosition()
 
-                    // Update every 300ms.
-                    handler.postDelayed(this, 300)
+                    // Update every 10ms.
+                    handler.postDelayed(this, 10)
                 } catch (e: Exception) {
                     e.printStackTrace()
                 }
@@ -538,7 +538,7 @@ class ForwardHandler : Handler() {
 
     companion object {
         const val MESSAGE_FORWARD = 1
-        const val DELAY = 300L
+        const val DELAY = 10L
     }
 
     private var player: com.github.florent37.assets_audio_player.Player? = null
